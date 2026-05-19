@@ -1,0 +1,59 @@
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('Manage Skills') }}
+        </h2>
+    </x-slot>
+
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-6 mb-6">
+                <h3 class="text-lg font-medium mb-4">Add New Skill</h3>
+                <form action="{{ route('admin.skills.store') }}" method="POST">
+                    @csrf
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <x-input-label for="name" :value="__('Skill Name')" />
+                            <x-text-input id="name" name="name" type="text" class="mt-1 block w-full" required />
+                        </div>
+                        <div>
+                            <x-input-label for="percentage" :value="__('Percentage')" />
+                            <x-text-input id="percentage" name="percentage" type="number" class="mt-1 block w-full" required />
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <x-primary-button>{{ __('Add Skill') }}</x-primary-button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-6">
+                <h3 class="text-lg font-medium mb-4">Existing Skills</h3>
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead>
+                        <tr>
+                            <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+                            <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Percentage</th>
+                            <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        @foreach($skills as $skill)
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ $skill->name }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ $skill->percentage }}%</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <form action="{{ route('admin.skills.destroy', $skill->id) }}" method="POST" onsubmit="return confirm('Are you sure?')">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="text-red-600 hover:text-red-900">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</x-app-layout>
