@@ -21,13 +21,13 @@ class PortfolioSeeder extends Seeder
     public function run(): void
     {
         Information::create([
-            'name' => 'Clark Thompson',
+            'name' => 'Mark Angelo De Guzman',
             'job_title' => 'Freelance Web Designer',
             'description' => 'A brief overview of who I am, my professional background, and my dedication to building user-centered digital experiences.',
             'birth_date' => 'January 01, 1987',
             'address' => 'San Francisco CA 97987 USA',
             'zip_code' => '1000',
-            'email' => 'clarkthomp@gmail.com',
+            'email' => 'markdeguzman@my.cspc.edu.ph',
             'phone' => '+1-2234-5678-9-0',
             'projects_completed' => 120,
         ]);
