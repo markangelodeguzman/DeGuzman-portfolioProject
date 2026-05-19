@@ -46,6 +46,8 @@ class PortfolioSeeder extends Seeder
             'email' => 'markdeguzman@my.cspc.edu.ph',
             'phone' => '09915694643',
             'projects_completed' => 120,
+            'hero_image' => 'images/CIMG75-Picsart-AiImageEnhancer.png',
+            'about_image' => 'images/75c8b80b4df.png',
         ]);
 
         Education::create([

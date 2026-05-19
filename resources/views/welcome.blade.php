@@ -94,10 +94,10 @@
 		            <ul class="about-info mt-4 px-md-0 px-2">
 		            	<li class="d-flex"><span>Name:</span> <span>{{ $info->name ?? 'Mark Angelo De Guzman' }}</span></li>
 		            	<li class="d-flex"><span>Date of birth:</span> <span>{{ $info->birth_date ?? 'January 01, 1987' }}</span></li>
-		            	<li class="d-flex"><span>Address:</span> <span>{{ $info->address ?? 'San Francisco CA 97987 USA' }}</span></li>
+		            	<li class="d-flex"><span>Address:</span> <span>{{ $info->address ?? 'Zone 1, Magpanambo, Polangui, Albay' }}</span></li>
 		            	<li class="d-flex"><span>Zip code:</span> <span>{{ $info->zip_code ?? '1000' }}</span></li>
 		            	<li class="d-flex"><span>Email:</span> <span>{{ $info->email ?? 'markdeguzman@my.cspc.edu.ph' }}</span></li>
-		            	<li class="d-flex"><span>Phone: </span> <span>{{ $info->phone ?? '+1-2234-5678-9-0' }}</span></li>
+		            	<li class="d-flex"><span>Phone: </span> <span>{{ $info->phone ?? '09915694643' }}</span></li>
 		            </ul>
 		          </div>
 		        </div>
@@ -337,7 +337,7 @@
           			<span class="icon-map-signs"></span>
           		</div>
           		<h3 class="mb-4">Address</h3>
-	            <p>{{ $info->address ?? '198 West 21th Street, Suite 721 New York NY 10016' }}</p>
+	            <p>{{ $info->address ?? 'Zone 1, Magpanambo, Polangui, Albay' }}</p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -346,7 +346,7 @@
           			<span class="icon-phone2"></span>
           		</div>
           		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://{{ $info->phone ?? '1234567920' }}">{{ $info->phone ?? '+ 1235 2355 98' }}</a></p>
+	            <p><a href="tel://{{ $info->phone ?? '09915694643' }}">{{ $info->phone ?? '09915694643' }}</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -355,7 +355,7 @@
           			<span class="icon-paper-plane"></span>
           		</div>
           		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:{{ $info->email ?? 'info@yoursite.com' }}">{{ $info->email ?? 'info@yoursite.com' }}</a></p>
+	            <p><a href="mailto:{{ $info->email ?? 'markdeguzman@my.cspc.edu.ph' }}">{{ $info->email ?? 'markdeguzman@my.cspc.edu.ph' }}</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -364,7 +364,7 @@
           			<span class="icon-globe"></span>
           		</div>
           		<h3 class="mb-4">Website</h3>
-	            <p><a href="#">{{ $info->website ?? 'yoursite.com' }}</a></p>
+	            <p><a href="#">{{ $info->website ?? 'markdeguzman.com' }}</a></p>
 	          </div>
           </div>
         </div>
