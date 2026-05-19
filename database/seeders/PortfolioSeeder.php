@@ -20,15 +20,31 @@ class PortfolioSeeder extends Seeder
      */
     public function run(): void
     {
+        // Clear existing data to avoid duplicates if re-running
+        Information::truncate();
+        Education::truncate();
+        Experience::truncate();
+        Service::truncate();
+        Skill::truncate();
+        Project::truncate();
+        Post::truncate();
+
         Information::create([
             'name' => 'Mark Angelo De Guzman',
             'job_title' => 'Freelance Web Designer',
             'description' => 'A brief overview of who I am, my professional background, and my dedication to building user-centered digital experiences.',
+            'resume_description' => 'An overview of my background, education, and practical experience in front-end development and UI/UX design.',
+            'services_description' => 'I provide end-to-end web design solutions, turning ideas into intuitive, user-friendly digital experiences.',
+            'skills_description' => 'My expertise spans core front-end programming languages, including HTML, CSS, and JavaScript, alongside modern design principles.',
+            'projects_description' => 'Explore a collection of my web development work, showcasing clean code, functional prototypes, and responsive interfaces.',
+            'blog_description' => 'Ideas, updates, and perspectives from our journey in front-end development.',
+            'contact_description' => 'Reach out for freelance opportunities, front-end development services, or general inquiries.',
+            'hire_me_description' => 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
             'birth_date' => 'January 01, 1987',
-            'address' => 'San Francisco CA 97987 USA',
+            'address' => 'Zone 1, Magpanambo, Polangui, Albay',
             'zip_code' => '1000',
             'email' => 'markdeguzman@my.cspc.edu.ph',
-            'phone' => '+1-2234-5678-9-0',
+            'phone' => '09915694643',
             'projects_completed' => 120,
         ]);
 

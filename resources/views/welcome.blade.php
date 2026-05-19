@@ -90,7 +90,7 @@
 		          <div class="col-md-12 heading-section ftco-animate">
 		          	<h1 class="big">About</h1>
 		            <h2 class="mb-4">About Me</h2>
-		            <p>A brief overview of who I am, my professional background, and my dedication to building user-centered digital experiences.</p>
+		            <p>{{ $info->description ?? 'A brief overview of who I am, my professional background, and my dedication to building user-centered digital experiences.' }}</p>
 		            <ul class="about-info mt-4 px-md-0 px-2">
 		            	<li class="d-flex"><span>Name:</span> <span>{{ $info->name ?? 'Mark Angelo De Guzman' }}</span></li>
 		            	<li class="d-flex"><span>Date of birth:</span> <span>{{ $info->birth_date ?? 'January 01, 1987' }}</span></li>
@@ -121,7 +121,7 @@
           <div class="col-md-10 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Resume</h1>
             <h2 class="mb-4">Resume</h2>
-            <p>An overview of my background, education, and practical experience in front-end development and UI/UX design.</p>
+            <p>{{ $info->resume_description ?? 'An overview of my background, education, and practical experience in front-end development and UI/UX design.' }}</p>
           </div>
         </div>
     		<div class="row">
@@ -161,7 +161,7 @@
           <div class="col-md-12 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Services</h1>
             <h2 class="mb-4">Services</h2>
-            <p>I provide end-to-end web design solutions, turning ideas into intuitive, user-friendly digital experiences.</p>
+            <p>{{ $info->services_description ?? 'I provide end-to-end web design solutions, turning ideas into intuitive, user-friendly digital experiences.' }}</p>
           </div>
         </div>
     		<div class="row">
@@ -188,7 +188,7 @@
           <div class="col-md-12 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Skills</h1>
             <h2 class="mb-4">My Skills</h2>
-            <p>My expertise spans core front-end programming languages, including HTML, CSS, and JavaScript, alongside modern design principles.</p>
+            <p>{{ $info->skills_description ?? 'My expertise spans core front-end programming languages, including HTML, CSS, and JavaScript, alongside modern design principles.' }}</p>
           </div>
         </div>
 				<div class="row">
@@ -216,7 +216,7 @@
           <div class="col-md-12 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">Our Projects</h2>
-            <p>Explore a collection of my web development work, showcasing clean code, functional prototypes, and responsive interfaces.</p>
+            <p>{{ $info->projects_description ?? 'Explore a collection of my web development work, showcasing clean code, functional prototypes, and responsive interfaces.' }}</p>
           </div>
         </div>
     		<div class="row">
@@ -242,7 +242,7 @@
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Blog</h1>
             <h2 class="mb-4">Our Blog</h2>
-            <p>Ideas, updates, and perspectives from our journey in front-end development.</p>
+            <p>{{ $info->blog_description ?? 'Ideas, updates, and perspectives from our journey in front-end development.' }}</p>
           </div>
         </div>
         <div class="row d-flex">
@@ -313,7 +313,7 @@
 				<div class="row justify-content-center">
 					<div class="col-md-7 ftco-animate text-center">
 						<h2>I'm <span>Available</span> for freelancing</h2>
-						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+						<p>{{ $info->hire_me_description ?? 'A small river named Duden flows by their place and supplies it with the necessary regelialia.' }}</p>
 						<p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5">Hire me</a></p>
 					</div>
 				</div>
@@ -326,7 +326,7 @@
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Contact</h1>
             <h2 class="mb-4">Contact Me</h2>
-            <p>Reach out for freelance opportunities, front-end development services, or general inquiries.</p>
+            <p>{{ $info->contact_description ?? 'Reach out for freelance opportunities, front-end development services, or general inquiries.' }}</p>
           </div>
         </div>
 

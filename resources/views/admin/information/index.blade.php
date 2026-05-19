@@ -28,8 +28,36 @@
                             <x-text-input id="job_title" name="job_title" type="text" class="mt-1 block w-full" :value="old('job_title', $info->job_title)" />
                         </div>
                         <div class="md:col-span-2">
-                            <x-input-label for="description" :value="__('Description')" />
+                            <x-input-label for="description" :value="__('About Description')" />
                             <textarea id="description" name="description" class="mt-1 block w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm">{{ old('description', $info->description) }}</textarea>
+                        </div>
+                        <div class="md:col-span-2">
+                            <x-input-label for="resume_description" :value="__('Resume Description')" />
+                            <textarea id="resume_description" name="resume_description" class="mt-1 block w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm">{{ old('resume_description', $info->resume_description) }}</textarea>
+                        </div>
+                        <div class="md:col-span-2">
+                            <x-input-label for="services_description" :value="__('Services Description')" />
+                            <textarea id="services_description" name="services_description" class="mt-1 block w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm">{{ old('services_description', $info->services_description) }}</textarea>
+                        </div>
+                        <div class="md:col-span-2">
+                            <x-input-label for="skills_description" :value="__('Skills Description')" />
+                            <textarea id="skills_description" name="skills_description" class="mt-1 block w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm">{{ old('skills_description', $info->skills_description) }}</textarea>
+                        </div>
+                        <div class="md:col-span-2">
+                            <x-input-label for="projects_description" :value="__('Projects Description')" />
+                            <textarea id="projects_description" name="projects_description" class="mt-1 block w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm">{{ old('projects_description', $info->projects_description) }}</textarea>
+                        </div>
+                        <div class="md:col-span-2">
+                            <x-input-label for="blog_description" :value="__('Blog Description')" />
+                            <textarea id="blog_description" name="blog_description" class="mt-1 block w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm">{{ old('blog_description', $info->blog_description) }}</textarea>
+                        </div>
+                        <div class="md:col-span-2">
+                            <x-input-label for="contact_description" :value="__('Contact Description')" />
+                            <textarea id="contact_description" name="contact_description" class="mt-1 block w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm">{{ old('contact_description', $info->contact_description) }}</textarea>
+                        </div>
+                        <div class="md:col-span-2">
+                            <x-input-label for="hire_me_description" :value="__('Hire Me Description')" />
+                            <textarea id="hire_me_description" name="hire_me_description" class="mt-1 block w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm">{{ old('hire_me_description', $info->hire_me_description) }}</textarea>
                         </div>
                         <div>
                             <x-input-label for="birth_date" :value="__('Birth Date')" />
