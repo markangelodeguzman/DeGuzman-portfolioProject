@@ -57,7 +57,7 @@
 	      	<div class="overlay"></div>
 	        <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url({{ $info->hero_image ? asset($info->hero_image) : asset('assets/images/bg_1.png') }});">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url({{ asset('images/75c8b80b4df.png') }});">
 	          		<div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -81,7 +81,7 @@
     			<div class="col-md-6 col-lg-5 d-flex">
     				<div class="img-about img d-flex align-items-stretch">
     					<div class="overlay"></div>
-	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url({{ $info->about_image ? asset('storage/'.$info->about_image) : asset('assets/images/bg_1.png') }});">
+	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url({{ asset('images/CIMG75-Picsart-AiImageEnhancer.png') }});">
 	    				</div>
     				</div>
     			</div>
